@@ -1,0 +1,8 @@
+.signal {
+    border-radius:100%;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border:0 none transparent;
+    background-color: tomato;
+}

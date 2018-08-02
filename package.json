@@ -4,7 +4,7 @@
   "description": "An example of a socket client for the proto skeleton backend framework",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config ./support/webpack.config.js",
+    "watch": "webpack --config ./support/webpack.config.js",
     "build-slim": "webpack --config ./support/webpack.config.slim.js",
     "build-json-parser": "webpack --config ./support/webpack.config.json-parser.js",
     "build-all": "npm run build && npm run build-slim && npm run build-json-parser"

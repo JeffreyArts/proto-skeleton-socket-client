@@ -17,6 +17,18 @@ const blink = target => {
 }
 
 
+// Set name
+document.querySelector("#setNameButton").onclick = () => {
+    const m = document.querySelector("#setNameMessage").value;
+    blink(document.querySelector("#setNameSignalOut"))
+    socket.emit('user.update', {name: m})
+}
+
+socket.on('user.update.success', m => {
+    blink(document.querySelector("#setNameSignalIn"))
+    document.querySelector("#setNameResult").innerText = m;
+})
+
 // To Self
 document.querySelector("#toSelfButton").onclick = () => {
     const m = document.querySelector("#toSelfMessage").value;
@@ -52,4 +64,16 @@ document.querySelector("#toOthersButton").onclick = () => {
 socket.on('toOthers.success', m => {
     blink(document.querySelector("#toOthersSignalIn"))
     document.querySelector("#toOthersResult").innerText = m;
+})
+
+// Get userlist
+document.querySelector("#getUserlistButton").onclick = () => {
+    // const m = document.querySelector("#getUserlistMessage").value;
+    blink(document.querySelector("#getUserlistSignalOut"))
+    socket.emit('getUserlist')
+}
+
+socket.on('getUserlist.success', m => {
+    blink(document.querySelector("#getUserlistSignalIn"))
+    document.querySelector("#getUserlistResult").innerText = JSON.stringify(m);
 })

@@ -4,12 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/style.css">
   <title>Socket.io Proto Skeleton client example</title>
-  <script src="/dist/app.js"></script>
 </head>
 <body>
 
-
+<table>
+    <tr>
+        <td>
+            <button id="toSelfButton">
+                To self
+            </button>
+        </td>
+        <td>
+            <input id="toSelfMessage">
+        </td>
+        <td>
+            <span class="signal" id="toSelfSignal">
+        </td>
+        <td>
+            <span id="toSelfResult"></span>
+        </td>
+    </tr>
+</table>
 
 </body>
+<script src="/dist/app.js"></script>
 </html>

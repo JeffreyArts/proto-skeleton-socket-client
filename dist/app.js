@@ -8798,6 +8798,26 @@ function onConnect(){
 }
 
 
+// To Self
+document.querySelector("#toSelfButton").onclick = () => {
+    const m = document.querySelector("#toSelfMessage").value;
+    socket.emit('toSelf', m)
+}
+
+socket.on('toSelf.success', m => {
+    blink(document.querySelector("#toSelfSignal"))
+    document.querySelector("#toSelfResult").innerText = m;
+})
+
+
+const blink = target => {
+    target.style = "background-color: lime;";
+    setTimeout(()=> {
+        target.style = "";
+    }, 150)
+}
+
+
 /***/ }),
 /* 47 */
 /***/ (function(module, exports) {

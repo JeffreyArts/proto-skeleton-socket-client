@@ -10,22 +10,106 @@
 <body>
 
 <table>
-    <tr>
-        <td>
-            <button id="toSelfButton">
-                To self
-            </button>
-        </td>
-        <td>
-            <input id="toSelfMessage">
-        </td>
-        <td>
-            <span class="signal" id="toSelfSignal">
-        </td>
-        <td>
-            <span id="toSelfResult"></span>
-        </td>
-    </tr>
+    <thead>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                Message content
+            </td>
+            <td>
+                Out
+            </td>
+            <td>
+                In
+            </td>
+            <td>
+                Content last received message
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- To self -->
+        <tr>
+            <td>
+                <strong>
+                    To self
+                </strong>
+            </td>
+            <td>
+                <input id="toSelfMessage">
+                <button id="toSelfButton">
+                    Send
+                </button>
+            </td>
+            <td>
+                    <span class="signal" id="toSelfSignalOut">
+            </td>
+            <td>
+                <span class="signal" id="toSelfSignalIn">
+            </td>
+            <td>
+                <span id="toSelfResult"></span>
+            </td>
+        </tr>
+
+
+
+
+
+        <!-- To others -->
+        <tr>
+            <td>
+                <strong>
+                    To others
+                </strong>
+            </td>
+            <td>
+                <input id="toOthersMessage">
+                <button id="toOthersButton">
+                    Send
+                </button>
+            </td>
+            <td>
+                <span class="signal" id="toOthersSignalOut">
+            </td>
+            <td>
+                <span class="signal" id="toOthersSignalIn">
+            </td>
+            <td>
+                <span id="toOthersResult"></span>
+            </td>
+        </tr>
+
+
+
+
+
+        <!-- To everyone -->
+        <tr>
+            <td>
+                <strong>
+                    To everyone
+                </strong>
+            </td>
+            <td>
+                <input id="toEveryoneMessage">
+                <button id="toEveryoneButton">
+                    Send
+                </button>
+            </td>
+            <td>
+                <span class="signal" id="toEveryoneSignalOut">
+            </td>
+            <td>
+                <span class="signal" id="toEveryoneSignalIn">
+            </td>
+            <td>
+                <span id="toEveryoneResult"></span>
+            </td>
+        </tr>
+    </tbody>
 </table>
 
 </body>

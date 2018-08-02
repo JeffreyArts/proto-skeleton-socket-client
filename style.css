@@ -6,3 +6,45 @@
     border:0 none transparent;
     background-color: tomato;
 }
+
+table {
+    width: 100%;
+    font-family: "Verdana";
+}
+thead td {
+    padding-bottom: 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+tbody td {
+    color: #333;
+}
+
+td:last-child {
+    max-width: 50vw;
+}
+
+input {
+    font-family: "Verdana";
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+button {
+    font-family: "Verdana";
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: aliceblue;
+    border-color: deepskyblue;
+    color: deepskyblue;
+    cursor: pointer;
+}

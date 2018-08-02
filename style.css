@@ -19,13 +19,20 @@ thead td {
 
 tbody td {
     color: #333;
+    padding: 10px 0;
+}
+
+tfoot td {
+    padding-top:2em;
 }
 
 td:last-child {
     max-width: 50vw;
+    padding-left: 10px;
 }
 
-input {
+input,
+select {
     font-family: "Verdana";
     padding: 8px 15px;
     border-radius: 5px;
@@ -47,4 +54,8 @@ button:hover {
     border-color: deepskyblue;
     color: deepskyblue;
     cursor: pointer;
+}
+
+small {
+    color: #AAA;
 }

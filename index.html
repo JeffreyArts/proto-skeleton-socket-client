@@ -114,6 +114,33 @@
 
 
 
+        <!-- To others in room -->
+        <tr>
+            <td>
+                <strong>
+                    To others <small>in room</small>
+                </strong>
+            </td>
+            <td>
+                <input id="toOthersInRoomMessage">
+                <button id="toOthersInRoomButton">
+                    Send
+                </button>
+            </td>
+            <td>
+                <span class="signal" id="toOthersInRoomSignalOut">
+            </td>
+            <td>
+                <span class="signal" id="toOthersInRoomSignalIn">
+            </td>
+            <td>
+                <span id="toOthersInRoomResult"></span>
+            </td>
+        </tr>
+
+
+
+
         <!-- To everyone -->
         <tr>
             <td>
@@ -139,6 +166,37 @@
         </tr>
 
 
+
+
+
+        <!-- To everyone in room -->
+        <tr>
+            <td>
+                <strong>
+                    To everyone <small>in room</small>
+                </strong>
+            </td>
+            <td>
+                <input id="toEveryoneInRoomMessage">
+                <button id="toEveryoneInRoomButton">
+                    Send
+                </button>
+            </td>
+            <td>
+                <span class="signal" id="toEveryoneInRoomSignalOut">
+            </td>
+            <td>
+                <span class="signal" id="toEveryoneInRoomSignalIn">
+            </td>
+            <td>
+                <span id="toEveryoneInRoomResult"></span>
+            </td>
+        </tr>
+
+
+
+
+
         <!-- Get userlist -->
         <tr>
             <td>
@@ -161,7 +219,59 @@
                 <span id="getUserlistResult"></span>
             </td>
         </tr>
+
+
+
+
+
+        <!-- Get current room -->
+        <tr>
+            <td>
+                <strong>
+                    Get current room
+                </strong>
+            </td>
+            <td>
+                <button id="getCurrentRoomButton">
+                    Send
+                </button>
+            </td>
+            <td>
+                <span class="signal" id="getCurrentRoomSignalOut">
+            </td>
+            <td>
+                <span class="signal" id="getCurrentRoomSignalIn">
+            </td>
+            <td>
+                <span id="getCurrentRoomResult"></span>
+            </td>
+        </tr>
     </tbody>
+    <tfoot>
+        <!-- Switch room -->
+        <tr>
+            <td>
+                <strong>
+                    Current room
+                </strong>
+            </td>
+            <td>
+                <select id="roomList">
+                    <option value="default" selected>Default</option>
+                    <option value="room1">Room 1</option>
+                    <option value="room2">Room 2</option>
+                    <option value="room3">Room 3</option>
+                    <option value="room4">Room 4</option>
+                </select>
+            </td>
+            <td colspan="2">
+                &nbsp;
+            </td>
+            <td>
+                Users in room: <span id="roomUsers"></span>
+            </td>
+        </tr>
+    </tfoot>
 </table>
 
 </body>
